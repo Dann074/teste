@@ -1,0 +1,144 @@
+:root {
+  --choice-back: rgba(255, 255, 255, 0.1);
+  --choice-hov: rgba(255, 255, 255, 0.6);
+}
+
+body {
+  color: #fff;
+}
+
+.choice-container {
+  display: flex;
+  margin-bottom: 0.8rem;
+  width: 100%;
+  border-radius: 4px;
+  background: var(--choice-back);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  font-size: 2rem;
+  min-width: 80rem;
+}
+
+.choice-container:hover {
+  cursor: pointer;
+  box-shadow: 0 0.4rem 1rem 0 var(--choice-hov);
+  transform: scale(1.02);
+  transform: transform 100ms;
+}
+
+.choice-prefix {
+  padding: 2rem 2.5rem;
+  color: #fff;
+}
+
+.choice-text {
+  padding: 2rem;
+  width: 100%;
+}
+
+h3 {
+  margin-bottom: 2rem;
+  color: #fff;
+  font-size: 3rem;
+  text-shadow: 
+              -0.5px -0.5px 0px #000, 
+              -0.5px 0.5px 0px #000,      
+              0.5px -0.5px 0px #000,    
+              0.5px 0px 0px #000;
+}
+
+.correct {
+  background: rgba(255, 25, 21, 0.6);
+}
+
+.incorrect {
+  background: rgba(255, 25, 21, 0.6);
+}
+
+/* Heads up Display */
+#hud {
+  display: flex;
+  justify-content: space-between;
+}
+
+.hud-item {
+  height: 90px;
+}
+
+.hud-prefix {
+  text-align: center;
+  font-size: 2rem;
+}
+
+.hud-main-text {
+  text-align: center;
+}
+
+#progressBar {
+  width: 20rem;
+  height: 2rem;
+  border: 0.2rem solid rgb(11,223,36);
+  margin-top: 2rem;
+  border-radius: 50px;
+  overflow: hidden;
+}
+
+#progressBarFull {
+  height: 100%;
+  background: rgb(11,223,36);
+  width: 0%;
+}
+
+#score {
+  opacity: 0;
+}
+
+#scoreText {
+  opacity: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    min-width: 40rem;
+  }
+
+  .choice-container {
+    display: flex;
+    margin-bottom: 0.8rem;
+    width: 100%;
+    border-radius: 4px;
+    background: var(--choice-back);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    font-size: 1rem;
+    min-width: 40rem;
+  }
+  
+  .choice-container:hover {
+    cursor: pointer;
+    box-shadow: 0 0.4rem 1rem 0 var(--choice-hov);
+    transform: scale(1.02);
+    transform: transform 100ms;
+  }
+  
+  .choice-prefix {
+    padding: 1rem 1.5rem;
+    color: #fff;
+  }
+  
+  .choice-text {
+    padding: 1rem;
+    width: 100%;
+  }  
+
+  h3 {
+    margin-bottom: 1rem;
+    color: #fff;
+    font-size: 2rem;
+    text-shadow: 
+                -0.5px -0.5px 0px #000, 
+                -0.5px 0.5px 0px #000,      
+                0.5px -0.5px 0px #000,    
+                0.5px 0px 0px #000;
+  }
+}

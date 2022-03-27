@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Nova+Square&display=swap');
+
+:root {
+  background: rgb(56,52,52);
+  background: url('background.jpeg');
+  background-size: 100%;
+
+  --btn: rgba(255, 255, 255, 0.1);
+  --btn-hov: rgba(255, 255, 255, 0.6);
+  --btn-text: #fff;
+  --h1: #fff;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-size:  62.5%;
+  font-family: 'Nova Square', cursive;
+}
+
+h1 {
+  font-size: 5.4rem;
+  color: var(--h1);
+  margin-bottom: 5rem;
+  text-shadow: 
+              -1px -1px 0px #000, 
+              -1px 1px 0px #000,      
+              1px -1px 0px #000,    
+              1px 0px 0px #000;
+}
+
+h2 {
+  font-size: 4.2rem;
+  margin-bottom: 4rem;
+  text-shadow: 
+              -1px -1px 0px #000, 
+              -1px 1px 0px #000,      
+              1px -1px 0px #000,    
+              1px 0px 0px #000;
+}
+
+.container {
+  width: 100vw;
+  height: 93vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 80rem;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column; 
+}
+
+.flex-center {
+  justify-content: center;
+  align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.hidden {
+  display: none;
+}
+
+.btn {
+  font-size: 2.4rem;
+  padding: 2rem 0;
+  width: 30rem;
+  text-align: center;
+  margin-bottom: 1rem;
+  color: var(--btn-text);
+  background: var(--btn);
+  border-radius: 4px;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  text-decoration: none;
+}
+
+.btn:hover {
+  cursor: pointer;
+  box-shadow: 0 0.4rem 1.4rem 0 var(--btn-hov);
+  transition: transform 150ms;
+  transform: scale(1.03);
+}
+
+.btn[disabled]:hover {
+  cursor: not-allowed;
+  box-shadow: none;
+  transform: none;
+}
+
+.fa-play {
+  font-size: 2.5rem;
+  margin-left: 1rem;
+}
+
+.fa-crown {
+  font-size: 2.5rem;
+  margin-left: 1rem;
+}
+
+.fa-arrow-rotate-left {
+  margin-left: 1rem;
+  font-size: 2rem;
+}
+
+#footer {
+  height: 7vh;
+  justify-content: center;
+  text-align: center;
+  font-size: 2.4rem;
+  font-weight: bold;
+  color: #fff;
+  background: var(--btn);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+.logo {
+  display: inline;
+  padding: 0.5px;
+  margin: 0.3vh 0;
+  height: 4.5vh;
+}
+
+#copyright {
+  display: inline;
+  margin: 1% 0;
+  padding: 0.5%;
+}
+
+.participants {
+  display: inline;
+  padding-right: 1%;
+}
+
+/* End Page CSS */
+
+.end-form-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 30rem;
+}
+
+input {
+  margin-bottom: 1rem;
+  width: 20rem;
+  padding: 1.5rem;
+  font-size: 1.8rem;
+  border: none;
+  box-shadow: 0 0.4rem 1.4rem 0 rgba(255, 255, 255, 0.6);
+}
+
+input::placeholder {
+  color: #aaa;
+}
+
+#username {
+  margin-bottom: 3rem;
+  width: 100%;
+  outline: none;
+}
+
+#end-text {
+  font-size: 2.4rem;
+  color: #fff;
+  text-align: center;
+}
+
+#saveScoreBtn {
+  border: none;
+}
+
+.fa-home {
+  margin-left: 1rem;
+  font-size: 2rem;
+}
+
+.participants-home {
+  text-align: center;
+  font-size: 2.4rem;
+  font-weight: bold;
+  color: #fff;
+  display: inline;
+  padding-right: 1%;
+  text-shadow: 
+              -0.5px -0.5px 0px #000, 
+              -0.5px 0.5px 0px #000,      
+              0.5px -0.5px 0px #000,    
+              0.5px 0px 0px #000;
+}
